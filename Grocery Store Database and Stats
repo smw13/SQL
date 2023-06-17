@@ -1,0 +1,23 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, section TEXT, price INTEGER, stock INTEGER);
+
+INSERT INTO store VALUES (1,"Strawberries","Produce", 4.38, 200);
+INSERT INTO store VALUES (2,"Pepperoni", "Deli", 3.94, 100);
+INSERT INTO store VALUES (3,"Chocolate Bars", "Candy", 2.50, 60);
+INSERT INTO store VALUES (4,"Toothpaste","Hygeine", 3.86, 150);
+INSERT INTO store VALUES (5,"Cottage Cheese", "Dairy", 3.78, 75);
+INSERT INTO store VALUES (6,"Rice", "Pantry", 2.33, 80);
+INSERT INTO store VALUES (7,"Ice Cream", "Frozen", 4.98, 20);
+INSERT INTO store VALUES (8,"Peanut Butter", "Pantry", 5.99, 35);
+INSERT INTO store VALUES (9,"Steak", "Meat", 15.99, 30);
+INSERT INTO store VALUES (10,"Lettuce", "Produce", 3.48, 60);
+INSERT INTO store VALUES (11,"Green Beans", "Frozen", 1.97,80);
+INSERT INTO store VALUES (12,"Yogurt","Dairy", 4.17, 20);
+INSERT INTO store VALUES (13,"Chips", "Snacks", 4.68, 67);
+INSERT INTO store VALUES (14,"Brownie Mix","Baking", 4.34,15);
+INSERT INTO store VALUES (15,"Coffee","Drinks", 3.88, 98);
+
+--display the database ordered by price
+SELECT*FROM store ORDER BY price desc;
+
+--display the database where stock of item is less that 50
+SELECT*FROM store WHERE stock < 50;
